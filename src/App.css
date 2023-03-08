@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.FilmsPage {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  border: 10px solid red;
+}
+.FilmsPage .firstContainer {
+  width: 25%;
+}
+.FilmsPage .firstContainer img {
+  width: 255px;
+  height: 350px;
+}
+.FilmsPage .aboutFilm {
+  width: 70%;
+}
+.FilmsPage .aboutFilm .filmTitle {
+  width: 100%;
+  height: 40px;
+  background-color: #041B2D;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-left: 20px;
+}
+.FilmsPage .aboutFilm .filmTitle b {
   color: white;
+  width: 20%;
+}
+.FilmsPage .aboutFilm .filmTitle p {
+  color: white;
+  font-size: 20px;
+  margin-left: 30px;
+  width: 70%;
+}
+.FilmsPage .aboutFilm .filmRating {
+  background: rgba(0, 0, 0, 0);
+}
+.FilmsPage .filmVideo {
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  margin-top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 992px) {
+  .FilmsPage {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .FilmsPage .firstContainer {
+    width: 90%;
+  }
+  .FilmsPage .firstContainer img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .FilmsPage .aboutFilm {
+    width: 90%;
+    margin-top: 10px;
+  }
+  .FilmsPage .aboutFilm p {
+    font-size: 16px;
   }
 }
+@media (min-width: 992px) and (max-width: 1250px) {
+  .FilmsPage {
+    justify-content: space-between;
+  }
+  .FilmsPage .firstContainer img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .FilmsPage .aboutFilm {
+    margin-top: 10px;
+    width: 50%;
+  }
+}/*# sourceMappingURL=App.css.map */

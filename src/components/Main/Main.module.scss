@@ -1,0 +1,168 @@
+
+.main{
+    display: flex;
+    flex-direction: column;
+    .FilmCategoriesPage{
+        width: 100%;
+        height: 100px;
+
+        .films{
+            border: 10px solid green;
+        }
+    }
+    .recommendationFilms{
+        display: flex;    
+        justify-content: space-between;
+        .films{
+            display: flex;
+            width: 65%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .film{
+                width: 170px;
+                height: 275px;
+               display: flex;
+               flex-direction: column;
+                position: relative;
+                transition: 1s;
+                
+                &:hover .upDiv{
+                    visibility: visible;
+                    opacity: 1;
+                }
+              .upDiv{
+                position: absolute;
+              top:20%;
+                align-self: center;
+                visibility: hidden;
+                opacity: 0;
+                img{
+                    width: 80px;
+                    height: 80px;
+                }
+              }
+                .imgArea{
+                    width: 100%;
+                    height: 70%;
+            
+                    img{
+                        width: 100%;
+                        height: 100%;
+            
+                    }
+                }
+                .textArea{
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        color: white;
+                    }
+                }
+            }
+        }
+        .recommendation{
+            width: 33%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            h3{
+                color: white;
+                width: 100%;
+                border-bottom:1px solid white ;
+            }
+            .RecFilms{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .film{
+                    width: 170px;
+                    height: 275px;
+                   display: flex;
+                   flex-direction: column;
+                    position: relative;
+                
+                    .imgArea{
+                        width: 100%;
+                        height: 70%;
+                
+                        img{
+                            width: 100%;
+                            height: 100%;
+                
+                        }
+                    }
+                    .textArea{
+                        display: flex;
+                        flex-direction: column;
+                     
+                        .likeBtn{
+                            width: 15px !important;
+                            height: 15px !important;
+                        }
+                        span{
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+}
+
+
+.Categories{
+    width: 100%;
+    height: 190px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+        .Categories__box{
+        width: 15%;
+        height: 35px;
+        background-color: #0B1A2A;
+        color: #15C394;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       text-decoration: none;
+       transition: 0.3s;
+       &:hover{
+        background-color: #15C394;
+        color: white;
+       }
+    }
+}
+
+@media(max-width:1200px){
+     .Categories{
+           overflow: auto;
+           height: 80px;
+        a{
+            width: 30% !important;
+            margin-top: 4px;
+            font-size: 14px;
+        }
+     }
+     .recommendationFilms{
+        flex-direction: column;
+
+        .films{
+            width: 100% !important;
+            justify-content: space-around !important;
+        }
+        .recommendation{
+            width: 100% !important;
+            .RecFilms{
+            justify-content: space-around !important;
+            }
+        }
+     }
+}
+
+
+

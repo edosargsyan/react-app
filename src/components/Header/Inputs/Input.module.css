@@ -1,0 +1,89 @@
+.Header__Inputs {
+  height: 160px;
+  background-color: #020D18;
+  margin-top: 5px;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+select {
+  outline: none;
+  background-color: #233A50;
+  border: none;
+  border-radius: 5px;
+  height: 42px;
+}
+select option {
+  background-color: white;
+  color: gray;
+}
+
+.secondSelect {
+  width: 20px;
+}
+
+input {
+  height: 40px;
+  outline: none;
+  background-color: #233A50;
+  color: white;
+  border: none;
+  position: relative;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+.selectedInput input {
+  border-radius: 5px 0 5px 5px !important;
+}
+
+.firstInput {
+  width: 100% !important;
+}
+
+button {
+  width: 20%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #15C394;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .Header__Inputs {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-color: #15C394;
+  }
+  .Header__Inputs form {
+    align-items: center;
+    justify-content: center;
+  }
+  .Header__Inputs button {
+    width: 95%;
+  }
+  .Header__Inputs .firstInput {
+    width: 92% !important;
+  }
+  .Header__Inputs .secondInput {
+    width: 40%;
+  }
+  .Header__Inputs .thirdInput {
+    width: 47%;
+  }
+  .Header__Inputs select {
+    width: 95%;
+  }
+  .Header__Inputs .dataListInput {
+    width: 92%;
+  }
+}/*# sourceMappingURL=Input.module.css.map */

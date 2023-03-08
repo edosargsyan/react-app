@@ -1,0 +1,152 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.main .FilmCategoriesPage {
+  width: 100%;
+  height: 100px;
+}
+.main .FilmCategoriesPage .films {
+  border: 10px solid green;
+}
+.main .recommendationFilms {
+  display: flex;
+  justify-content: space-between;
+}
+.main .recommendationFilms .films {
+  display: flex;
+  width: 65%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .recommendationFilms .films .film {
+  width: 170px;
+  height: 275px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: 1s;
+}
+.main .recommendationFilms .films .film:hover .upDiv {
+  visibility: visible;
+  opacity: 1;
+}
+.main .recommendationFilms .films .film .upDiv {
+  position: absolute;
+  top: 20%;
+  align-self: center;
+  visibility: hidden;
+  opacity: 0;
+}
+.main .recommendationFilms .films .film .upDiv img {
+  width: 80px;
+  height: 80px;
+}
+.main .recommendationFilms .films .film .imgArea {
+  width: 100%;
+  height: 70%;
+}
+.main .recommendationFilms .films .film .imgArea img {
+  width: 100%;
+  height: 100%;
+}
+.main .recommendationFilms .films .film .textArea {
+  display: flex;
+  flex-direction: column;
+}
+.main .recommendationFilms .films .film .textArea span {
+  color: white;
+}
+.main .recommendationFilms .recommendation {
+  width: 33%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.main .recommendationFilms .recommendation h3 {
+  color: white;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+.main .recommendationFilms .recommendation .RecFilms {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .recommendationFilms .recommendation .RecFilms .film {
+  width: 170px;
+  height: 275px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.main .recommendationFilms .recommendation .RecFilms .film .imgArea {
+  width: 100%;
+  height: 70%;
+}
+.main .recommendationFilms .recommendation .RecFilms .film .imgArea img {
+  width: 100%;
+  height: 100%;
+}
+.main .recommendationFilms .recommendation .RecFilms .film .textArea {
+  display: flex;
+  flex-direction: column;
+}
+.main .recommendationFilms .recommendation .RecFilms .film .textArea .likeBtn {
+  width: 15px !important;
+  height: 15px !important;
+}
+.main .recommendationFilms .recommendation .RecFilms .film .textArea span {
+  color: white;
+  text-decoration: none;
+}
+
+.Categories {
+  width: 100%;
+  height: 190px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.Categories .Categories__box {
+  width: 15%;
+  height: 35px;
+  background-color: #0B1A2A;
+  color: #15C394;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.Categories .Categories__box:hover {
+  background-color: #15C394;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .Categories {
+    overflow: auto;
+    height: 80px;
+  }
+  .Categories a {
+    width: 30% !important;
+    margin-top: 4px;
+    font-size: 14px;
+  }
+  .recommendationFilms {
+    flex-direction: column;
+  }
+  .recommendationFilms .films {
+    width: 100% !important;
+    justify-content: space-around !important;
+  }
+  .recommendationFilms .recommendation {
+    width: 100% !important;
+  }
+  .recommendationFilms .recommendation .RecFilms {
+    justify-content: space-around !important;
+  }
+}/*# sourceMappingURL=Main.module.css.map */
